@@ -1,0 +1,250 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family:'Trebuchet MS','Lucida Sans Unicode','Lucia Grande','Lucida Sans', sans-serif;
+}
+
+
+/* Naviagtion bar */
+
+.kennel-header {
+  align-items: center;
+  display: flex;
+  height: 85px;
+  justify-content: space-between;
+  background-color: #76CDC1;
+}
+
+.kennel-logo-container {
+  width: 240px;
+  font-size: 30px;
+  padding: 10px 30px;
+}
+
+.kennel-nav {
+  width: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 10px;
+}
+
+.nav-element { 
+  cursor: pointer;
+  padding: 10px 30px;
+}
+
+
+/*Main photo & appliccation button area */
+
+.frenchie-main-photo {
+  align-items: center;
+  background-image: url('https://images.app.goo.gl/NJvVQ8fwG1xBhSvp9');
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  height: 550px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+
+/*text over photo */
+
+.intro-content {
+  color: #76CDC1;
+  position: absolute;
+  text-align: center;
+  width: 400px;
+}
+
+.intro-title {
+  font-size: 40px;
+  padding-bottom: 55px;
+}
+
+.intro-subtitle {
+  font-size: 16px;
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+
+/* button */ 
+
+
+.apply-button {
+  background-color: #76CDC1;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 15px auto;
+  text-align: center;
+  transition: 0.4s ease-in-out;
+  width: 250px;
+}
+
+.apply-button:hover {
+  background-color: seagreen;
+}
+
+.apply-button-text {
+  padding: 10px;
+}
+
+
+/* meet the dogs section */
+
+
+.dog-picture-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding-bottom: 2px;
+}
+
+.dog-picture-container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.dog-img {
+/*   this is a flex child and also a flex parent */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center center;
+  background-size: cover;
+  flex-basis: 250px; /* flex version of width */
+  height: 250px;
+  font-size: 24px;  
+  font-weight: bold;
+  margin: 0 15px;
+  color: transparent;
+  
+}
+
+.dog-img:hover {
+  color: white;
+}
+
+/* dog img links*/
+
+.bella { 
+  background-image: url('https://t.co/bVjg6oXpwN?ssr=true'); 
+}
+.louie { 
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyI-DX8TjvsnNMakrullGbRYoU4VLU-sVXPWTSA9WEJJSm6bVEcJw3nOpv9eOjLaolSfNGFpMYsiE&usqp=CAU&ec=48600113'); 
+}
+.diesel {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXi8AL5w3rd5XpSih4dR0eRLwmFlAN9iFNcHQvHYINjw&usqp=CAU&ec=48600113'); 
+}
+.rocky { 
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTygo0XOu-WAG3o2rA-g81ptoGT7Nseuik7WmlanH2xcw&usqp=CAU&ec=48600113'); 
+}
+.luna { 
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdj08JfAqkhQMQldlh9w0z1EOEQ1yYshwRc7qntw2mrQ&usqp=CAU&ec=48600113'); 
+}
+.sadie { 
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpbxx82AUUSyjMoioklCdGKa4wg54nf7612iG2lK3Odw&usqp=CAU&ec=48600113'); 
+}
+
+
+/* dark light theme and footer */
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  width: 50px;
+  height: 29px;
+  background-color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 30px;
+  padding: 6px;
+  position: relative;
+}
+
+.switcher {
+  background-color: #fff;
+  position: absolute;
+  top: 5px;
+  left: 2px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+
+.moon {
+  color: #ffa502;
+}
+
+.sun {
+  color: #ff4757;
+}
+
+.checkbox:checked+.label .switcher {
+  transform: translateX(24px);
+}
+
+body.dark {
+  background-color: #1e272e;
+}
+
+body.dark .bar {
+  background-color: #fff;
+}
+
+body.dark p {
+  color: #fff;
+}
+
+body.dark h3 {
+  color: #fff;
+}
+
+body.dark nav {
+
+  box-shadow: 2px 3px 2px #111010;
+}
+
+body.dark ul {
+  background-color: #1e272e;
+}
+
+body.dark .name {
+  color: var(--primary-color);
+}
+
+body.dark .role {
+  color: var(--secondary-color);
+}
+
+body.dark footer {
+  color: #fff;
+  border-top: 1px solid #111010;
+  box-shadow: 0px -2px 3px #111010;
+}
+
+footer {
+  border-top: 1px solid #f1f1f1;
+  box-shadow: 0px -2px 3px #f1f1f1;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 20px;
+}
+
+
+
